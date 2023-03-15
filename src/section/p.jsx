@@ -7,12 +7,8 @@ export default function Overall() {
         (data)=> {
            return <Page
            key={data.item}
-           image={data.img}
-           location={data.locationImg}
-           country={data.country}
-           heading={data.heading}
-           text={data.text}
-           date={data.date}/>
+           display={data}
+           />
         }
     )
     return(
@@ -24,6 +20,13 @@ export default function Overall() {
 
 
 /*
+
+image={data.img}
+           location={data.locationImg}
+           country={data.country}
+           heading={data.heading}
+           text={data.text}
+           date={data.date}
 */
 
 
